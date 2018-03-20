@@ -1,0 +1,82 @@
+First, I've gotten rid of the segfaults.
+It worked on Windows, so I didn't know it was crashing.
+Which explains why I got so many points taken off.
+
+Did both options.
+For option A, I used r4 to r11 as the pseudo-stack.
+I pushed/popped half of these 8 to the actual stack when needed.
+As a result, when I do a something stack-heavy,
+my assembly would look as follows 
+
+	ldr	r1, [r1]
+	ldmfd	sp!, {r4,r5,r6,r7}
+	add	r1, r11, r1
+	sub	r10, r10, r1
+	ldr	r1, =vars+16
+	ldr	r1, [r1]
+	add	r1, r10, r1
+	add	r1, r9, r1
+	add	r8, r8, r1
+	ldr	r1, =vars+20
+	ldr	r1, [r1]
+	sub	r1, r8, r1
+
+For option B, the first thing I did was cleaning up assignment.
+
+Here are three kinds of assignments.
+
+First kind is like "a := 5", which compiles into the following:
+	@assignment
+	ldr	r4, =vars+0
+	mov	r1, #5
+	str	r1, [r4]
+
+Then we have "b := a" compiling into the following:
+	@assignment
+	ldr	r4, =vars+4
+	ldr	r1, =vars+0
+	str	r1, [r4]
+
+Lastly, here's an assignment done on arrays/records.
+	@assignment
+	ldr	r4, =vars+8
+	ldr	r1, =vars+128
+	mov	r0, r4
+	ldmfd	r1!, {r4,r5,r6,r7,r8,r9,r10,r11}
+	stmea	r0!, {r4,r5,r6,r7,r8,r9,r10,r11}
+	ldmfd	r1!, {r4,r5,r6,r7,r8,r9,r10,r11}
+	stmea	r0!, {r4,r5,r6,r7,r8,r9,r10,r11}
+	ldmfd	r1!, {r4,r5,r6,r7,r8,r9,r10,r11}
+	stmea	r0!, {r4,r5,r6,r7,r8,r9,r10,r11}
+	ldmfd	r1!, {r4,r5,r6,r7,r8,r9}
+	stmea	r0!, {r4,r5,r6,r7,r8,r9}
+
+The first two are as clean as it can be.
+The last one moves 30 integers at a same time
+by using the 8 pseudo-stack registers as temporary storage.
+
+Cascades of selectors are cleaned up as well.
+As suggested on the assignment page, a complicated selector
+such as "arr2[0].b[1].a" would come down to only two lines of assembly:
+
+	ldr	r1, =vars+24
+	ldr	r1, [r1, #4]
+
+Lastly, I've cleaned up addition, multiplication, and division by constants.
+Addition now adds the constant as an immediate value.
+Multiplication by a constant is ALWAYS handled by bitshifts now.
+Not sure if that's the best idea efficiency-wise, but it works.
+"a * 51" compiles to the following:
+
+	@constMult
+	mov	r5, r4
+	mov	r4, r4, asl #1
+	add	r4, r4, r5
+	mov	r4, r4, asl #3
+	add	r4, r4, r5
+	mov	r4, r4, asl #1
+	add	r4, r4, r5
+
+Divisions by powers of two become bitshifts.
+
+That should be about it, besides finishing the half-done mess from last week.
