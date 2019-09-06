@@ -28,7 +28,7 @@ To quote the man himself directly: "If you try to use this for homework, you can
 
 ## TODO
 * Fix the bugs... does this thing even work most of the time?
-* Get rid of the stupid uintptr_t shenanigans somehow.
+* Get rid of the stupid `uintptr_t` shenanigans somehow.
 * Don't use ancient C++. Use smart pointers, enum classes, and variants.
 * Actually write the interpreter
 * Write code generation for x86
