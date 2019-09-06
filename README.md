@@ -22,7 +22,7 @@ Code examples can be found in the examples folder.
 
 ## Disclaimer
 
-If you happen to be taking the same class, please do not cheat off of this. There's a good chance that this code doesn't work very well anyways.
+If you happen to be taking the same class, please do not cheat off of this. This code doesn't work very well anyways.
 
 To quote the man himself directly: "If you try to use this for homework, you can be certain that your instructor will find the matching code here and bust you. But your instructor may not be able to bust me because I might have graduated already. Ha-ha!"
 
