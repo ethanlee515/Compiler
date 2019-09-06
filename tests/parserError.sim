@@ -1,0 +1,34 @@
+PROGRAM parserError ;
+
+VAR asdf zxcv : t; (*missing comma in identifier list*)
+CONST a = 5 (*missing semicolon after constDecl*)
+
+BEGIN
+
+id [3 5] := 5; (*missing comma in expression list*)
+id [3,5 := 5; (*missing ] in selector*)
+
+
+WHILE 3 > 4 DO
+	WRITE 6
+END (*missing semicolon after instruction*)
+
+READ asdf (*missing semicolon, but should be suppressed*)
+(*distance less than 4*)
+
+READ asdf (*Now this one shouldn't be suppressed*)
+
+REPEAT
+	READ asdf;
+	WRITE 3
+UNTIL 6 > 8 ; (*missing END*)
+
+REPEAT
+	READ asdf;
+	WRITE 3
+UNTIL 6 > 8 (*missing END and semicolon*)
+
+zxcv := 8;
+asdf := 6 (*padding so above doesn't eat the END that ends the program*)
+
+END parserError .

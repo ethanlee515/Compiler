@@ -1,0 +1,29 @@
+PROGRAM arrAssign;
+
+CONST len = 5;
+VAR arr1, arr2 : ARRAY len OF INTEGER; counter : INTEGER;
+
+BEGIN
+
+WHILE counter < len DO
+	WRITE arr2[counter];
+	counter := counter + 1
+END; (*Print to check it's initialized to 0's correctly*)
+
+counter := 0;
+
+WHILE counter < len DO
+	arr1[counter] := counter;
+	counter := counter + 1
+END;
+
+arr2 := arr1; (*you CAN assign arrays*)
+arr1[0] := 42; (*deep copied, so this should have no effect on arr2*) 
+counter := 0;
+
+WHILE counter < len DO
+	WRITE arr2[counter];
+	counter := counter + 1
+END
+
+END arrAssign .

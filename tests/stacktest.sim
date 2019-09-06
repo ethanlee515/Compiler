@@ -1,0 +1,905 @@
+PROGRAM stacktest;
+VAR v1 : INTEGER;
+VAR v2 : INTEGER;
+VAR v3 : INTEGER;
+VAR v4 : INTEGER;
+VAR v5 : INTEGER;
+VAR v6 : INTEGER;
+VAR v7 : INTEGER;
+VAR v8 : INTEGER;
+VAR v9 : INTEGER;
+VAR v10 : INTEGER;
+VAR v11 : INTEGER;
+VAR v12 : INTEGER;
+VAR v13 : INTEGER;
+VAR v14 : INTEGER;
+VAR v15 : INTEGER;
+VAR v16 : INTEGER;
+VAR v17 : INTEGER;
+VAR v18 : INTEGER;
+VAR v19 : INTEGER;
+VAR v20 : INTEGER;
+VAR v21 : INTEGER;
+VAR v22 : INTEGER;
+VAR v23 : INTEGER;
+VAR v24 : INTEGER;
+VAR v25 : INTEGER;
+VAR v26 : INTEGER;
+VAR v27 : INTEGER;
+VAR v28 : INTEGER;
+VAR v29 : INTEGER;
+VAR v30 : INTEGER;
+VAR v31 : INTEGER;
+VAR v32 : INTEGER;
+VAR v33 : INTEGER;
+VAR v34 : INTEGER;
+VAR v35 : INTEGER;
+VAR v36 : INTEGER;
+VAR v37 : INTEGER;
+VAR v38 : INTEGER;
+VAR v39 : INTEGER;
+VAR v40 : INTEGER;
+VAR v41 : INTEGER;
+VAR v42 : INTEGER;
+VAR v43 : INTEGER;
+VAR v44 : INTEGER;
+VAR v45 : INTEGER;
+VAR v46 : INTEGER;
+VAR v47 : INTEGER;
+VAR v48 : INTEGER;
+VAR v49 : INTEGER;
+VAR v50 : INTEGER;
+VAR v51 : INTEGER;
+VAR v52 : INTEGER;
+VAR v53 : INTEGER;
+VAR v54 : INTEGER;
+VAR v55 : INTEGER;
+VAR v56 : INTEGER;
+VAR v57 : INTEGER;
+VAR v58 : INTEGER;
+VAR v59 : INTEGER;
+VAR v60 : INTEGER;
+VAR v61 : INTEGER;
+VAR v62 : INTEGER;
+VAR v63 : INTEGER;
+VAR v64 : INTEGER;
+VAR v65 : INTEGER;
+VAR v66 : INTEGER;
+VAR v67 : INTEGER;
+VAR v68 : INTEGER;
+VAR v69 : INTEGER;
+VAR v70 : INTEGER;
+VAR v71 : INTEGER;
+VAR v72 : INTEGER;
+VAR v73 : INTEGER;
+VAR v74 : INTEGER;
+VAR v75 : INTEGER;
+VAR v76 : INTEGER;
+VAR v77 : INTEGER;
+VAR v78 : INTEGER;
+VAR v79 : INTEGER;
+VAR v80 : INTEGER;
+VAR v81 : INTEGER;
+VAR v82 : INTEGER;
+VAR v83 : INTEGER;
+VAR v84 : INTEGER;
+VAR v85 : INTEGER;
+VAR v86 : INTEGER;
+VAR v87 : INTEGER;
+VAR v88 : INTEGER;
+VAR v89 : INTEGER;
+VAR v90 : INTEGER;
+VAR v91 : INTEGER;
+VAR v92 : INTEGER;
+VAR v93 : INTEGER;
+VAR v94 : INTEGER;
+VAR v95 : INTEGER;
+VAR v96 : INTEGER;
+VAR v97 : INTEGER;
+VAR v98 : INTEGER;
+VAR v99 : INTEGER;
+VAR v100 : INTEGER;
+VAR v101 : INTEGER;
+VAR v102 : INTEGER;
+VAR v103 : INTEGER;
+VAR v104 : INTEGER;
+VAR v105 : INTEGER;
+VAR v106 : INTEGER;
+VAR v107 : INTEGER;
+VAR v108 : INTEGER;
+VAR v109 : INTEGER;
+VAR v110 : INTEGER;
+VAR v111 : INTEGER;
+VAR v112 : INTEGER;
+VAR v113 : INTEGER;
+VAR v114 : INTEGER;
+VAR v115 : INTEGER;
+VAR v116 : INTEGER;
+VAR v117 : INTEGER;
+VAR v118 : INTEGER;
+VAR v119 : INTEGER;
+VAR v120 : INTEGER;
+VAR v121 : INTEGER;
+VAR v122 : INTEGER;
+VAR v123 : INTEGER;
+VAR v124 : INTEGER;
+VAR v125 : INTEGER;
+VAR v126 : INTEGER;
+VAR v127 : INTEGER;
+VAR v128 : INTEGER;
+VAR v129 : INTEGER;
+VAR v130 : INTEGER;
+VAR v131 : INTEGER;
+VAR v132 : INTEGER;
+VAR v133 : INTEGER;
+VAR v134 : INTEGER;
+VAR v135 : INTEGER;
+VAR v136 : INTEGER;
+VAR v137 : INTEGER;
+VAR v138 : INTEGER;
+VAR v139 : INTEGER;
+VAR v140 : INTEGER;
+VAR v141 : INTEGER;
+VAR v142 : INTEGER;
+VAR v143 : INTEGER;
+VAR v144 : INTEGER;
+VAR v145 : INTEGER;
+VAR v146 : INTEGER;
+VAR v147 : INTEGER;
+VAR v148 : INTEGER;
+VAR v149 : INTEGER;
+VAR v150 : INTEGER;
+VAR v151 : INTEGER;
+VAR v152 : INTEGER;
+VAR v153 : INTEGER;
+VAR v154 : INTEGER;
+VAR v155 : INTEGER;
+VAR v156 : INTEGER;
+VAR v157 : INTEGER;
+VAR v158 : INTEGER;
+VAR v159 : INTEGER;
+VAR v160 : INTEGER;
+VAR v161 : INTEGER;
+VAR v162 : INTEGER;
+VAR v163 : INTEGER;
+VAR v164 : INTEGER;
+VAR v165 : INTEGER;
+VAR v166 : INTEGER;
+VAR v167 : INTEGER;
+VAR v168 : INTEGER;
+VAR v169 : INTEGER;
+VAR v170 : INTEGER;
+VAR v171 : INTEGER;
+VAR v172 : INTEGER;
+VAR v173 : INTEGER;
+VAR v174 : INTEGER;
+VAR v175 : INTEGER;
+VAR v176 : INTEGER;
+VAR v177 : INTEGER;
+VAR v178 : INTEGER;
+VAR v179 : INTEGER;
+VAR v180 : INTEGER;
+VAR v181 : INTEGER;
+VAR v182 : INTEGER;
+VAR v183 : INTEGER;
+VAR v184 : INTEGER;
+VAR v185 : INTEGER;
+VAR v186 : INTEGER;
+VAR v187 : INTEGER;
+VAR v188 : INTEGER;
+VAR v189 : INTEGER;
+VAR v190 : INTEGER;
+VAR v191 : INTEGER;
+VAR v192 : INTEGER;
+VAR v193 : INTEGER;
+VAR v194 : INTEGER;
+VAR v195 : INTEGER;
+VAR v196 : INTEGER;
+VAR v197 : INTEGER;
+VAR v198 : INTEGER;
+VAR v199 : INTEGER;
+VAR v200 : INTEGER;
+VAR v201 : INTEGER;
+VAR v202 : INTEGER;
+VAR v203 : INTEGER;
+VAR v204 : INTEGER;
+VAR v205 : INTEGER;
+VAR v206 : INTEGER;
+VAR v207 : INTEGER;
+VAR v208 : INTEGER;
+VAR v209 : INTEGER;
+VAR v210 : INTEGER;
+VAR v211 : INTEGER;
+VAR v212 : INTEGER;
+VAR v213 : INTEGER;
+VAR v214 : INTEGER;
+VAR v215 : INTEGER;
+VAR v216 : INTEGER;
+VAR v217 : INTEGER;
+VAR v218 : INTEGER;
+VAR v219 : INTEGER;
+VAR v220 : INTEGER;
+VAR v221 : INTEGER;
+VAR v222 : INTEGER;
+VAR v223 : INTEGER;
+VAR v224 : INTEGER;
+VAR v225 : INTEGER;
+VAR v226 : INTEGER;
+VAR v227 : INTEGER;
+VAR v228 : INTEGER;
+VAR v229 : INTEGER;
+VAR v230 : INTEGER;
+VAR v231 : INTEGER;
+VAR v232 : INTEGER;
+VAR v233 : INTEGER;
+VAR v234 : INTEGER;
+VAR v235 : INTEGER;
+VAR v236 : INTEGER;
+VAR v237 : INTEGER;
+VAR v238 : INTEGER;
+VAR v239 : INTEGER;
+VAR v240 : INTEGER;
+VAR v241 : INTEGER;
+VAR v242 : INTEGER;
+VAR v243 : INTEGER;
+VAR v244 : INTEGER;
+VAR v245 : INTEGER;
+VAR v246 : INTEGER;
+VAR v247 : INTEGER;
+VAR v248 : INTEGER;
+VAR v249 : INTEGER;
+VAR v250 : INTEGER;
+VAR v251 : INTEGER;
+VAR v252 : INTEGER;
+VAR v253 : INTEGER;
+VAR v254 : INTEGER;
+VAR v255 : INTEGER;
+VAR v256 : INTEGER;
+VAR v257 : INTEGER;
+VAR v258 : INTEGER;
+VAR v259 : INTEGER;
+VAR v260 : INTEGER;
+VAR v261 : INTEGER;
+VAR v262 : INTEGER;
+VAR v263 : INTEGER;
+VAR v264 : INTEGER;
+VAR v265 : INTEGER;
+VAR v266 : INTEGER;
+VAR v267 : INTEGER;
+VAR v268 : INTEGER;
+VAR v269 : INTEGER;
+VAR v270 : INTEGER;
+VAR v271 : INTEGER;
+VAR v272 : INTEGER;
+VAR v273 : INTEGER;
+VAR v274 : INTEGER;
+VAR v275 : INTEGER;
+VAR v276 : INTEGER;
+VAR v277 : INTEGER;
+VAR v278 : INTEGER;
+VAR v279 : INTEGER;
+VAR v280 : INTEGER;
+VAR v281 : INTEGER;
+VAR v282 : INTEGER;
+VAR v283 : INTEGER;
+VAR v284 : INTEGER;
+VAR v285 : INTEGER;
+VAR v286 : INTEGER;
+VAR v287 : INTEGER;
+VAR v288 : INTEGER;
+VAR v289 : INTEGER;
+VAR v290 : INTEGER;
+VAR v291 : INTEGER;
+VAR v292 : INTEGER;
+VAR v293 : INTEGER;
+VAR v294 : INTEGER;
+VAR v295 : INTEGER;
+VAR v296 : INTEGER;
+VAR v297 : INTEGER;
+VAR v298 : INTEGER;
+VAR v299 : INTEGER;
+VAR v300 : INTEGER;
+BEGIN
+v1 := 6;
+v2 := 9;
+v3 := 8;
+v4 := 5;
+v5 := 9;
+v6 := 2;
+v7 := 4;
+v8 := 1;
+v9 := 8;
+v10 := 3;
+v11 := 9;
+v12 := 3;
+v13 := 8;
+v14 := 7;
+v15 := 8;
+v16 := 6;
+v17 := 8;
+v18 := 9;
+v19 := 4;
+v20 := 1;
+v21 := 1;
+v22 := 7;
+v23 := 6;
+v24 := 1;
+v25 := 5;
+v26 := 8;
+v27 := 7;
+v28 := 6;
+v29 := 9;
+v30 := 6;
+v31 := 3;
+v32 := 1;
+v33 := 3;
+v34 := 1;
+v35 := 7;
+v36 := 5;
+v37 := 9;
+v38 := 2;
+v39 := 8;
+v40 := 4;
+v41 := 3;
+v42 := 7;
+v43 := 3;
+v44 := 4;
+v45 := 7;
+v46 := 3;
+v47 := 4;
+v48 := 8;
+v49 := 3;
+v50 := 2;
+v51 := 6;
+v52 := 6;
+v53 := 2;
+v54 := 7;
+v55 := 4;
+v56 := 8;
+v57 := 3;
+v58 := 4;
+v59 := 8;
+v60 := 5;
+v61 := 5;
+v62 := 3;
+v63 := 6;
+v64 := 7;
+v65 := 1;
+v66 := 2;
+v67 := 5;
+v68 := 6;
+v69 := 5;
+v70 := 5;
+v71 := 6;
+v72 := 1;
+v73 := 6;
+v74 := 7;
+v75 := 8;
+v76 := 6;
+v77 := 4;
+v78 := 7;
+v79 := 4;
+v80 := 3;
+v81 := 1;
+v82 := 6;
+v83 := 1;
+v84 := 2;
+v85 := 1;
+v86 := 6;
+v87 := 8;
+v88 := 6;
+v89 := 9;
+v90 := 2;
+v91 := 7;
+v92 := 4;
+v93 := 3;
+v94 := 2;
+v95 := 3;
+v96 := 2;
+v97 := 9;
+v98 := 4;
+v99 := 7;
+v100 := 9;
+v101 := 1;
+v102 := 3;
+v103 := 5;
+v104 := 4;
+v105 := 7;
+v106 := 4;
+v107 := 1;
+v108 := 3;
+v109 := 3;
+v110 := 4;
+v111 := 9;
+v112 := 9;
+v113 := 6;
+v114 := 2;
+v115 := 7;
+v116 := 7;
+v117 := 3;
+v118 := 4;
+v119 := 4;
+v120 := 7;
+v121 := 2;
+v122 := 7;
+v123 := 9;
+v124 := 7;
+v125 := 9;
+v126 := 9;
+v127 := 4;
+v128 := 5;
+v129 := 9;
+v130 := 2;
+v131 := 9;
+v132 := 8;
+v133 := 4;
+v134 := 8;
+v135 := 8;
+v136 := 2;
+v137 := 4;
+v138 := 6;
+v139 := 8;
+v140 := 7;
+v141 := 5;
+v142 := 3;
+v143 := 7;
+v144 := 7;
+v145 := 6;
+v146 := 9;
+v147 := 8;
+v148 := 3;
+v149 := 3;
+v150 := 4;
+v151 := 6;
+v152 := 8;
+v153 := 3;
+v154 := 8;
+v155 := 7;
+v156 := 9;
+v157 := 1;
+v158 := 3;
+v159 := 7;
+v160 := 9;
+v161 := 5;
+v162 := 6;
+v163 := 4;
+v164 := 9;
+v165 := 3;
+v166 := 4;
+v167 := 2;
+v168 := 1;
+v169 := 3;
+v170 := 6;
+v171 := 5;
+v172 := 3;
+v173 := 6;
+v174 := 5;
+v175 := 7;
+v176 := 1;
+v177 := 7;
+v178 := 7;
+v179 := 4;
+v180 := 5;
+v181 := 2;
+v182 := 1;
+v183 := 9;
+v184 := 2;
+v185 := 4;
+v186 := 3;
+v187 := 7;
+v188 := 9;
+v189 := 2;
+v190 := 9;
+v191 := 3;
+v192 := 8;
+v193 := 7;
+v194 := 2;
+v195 := 6;
+v196 := 1;
+v197 := 1;
+v198 := 3;
+v199 := 8;
+v200 := 2;
+v201 := 9;
+v202 := 3;
+v203 := 9;
+v204 := 1;
+v205 := 9;
+v206 := 3;
+v207 := 5;
+v208 := 3;
+v209 := 2;
+v210 := 1;
+v211 := 6;
+v212 := 2;
+v213 := 4;
+v214 := 3;
+v215 := 5;
+v216 := 6;
+v217 := 1;
+v218 := 2;
+v219 := 7;
+v220 := 7;
+v221 := 5;
+v222 := 4;
+v223 := 2;
+v224 := 9;
+v225 := 6;
+v226 := 1;
+v227 := 4;
+v228 := 4;
+v229 := 7;
+v230 := 6;
+v231 := 3;
+v232 := 9;
+v233 := 6;
+v234 := 9;
+v235 := 2;
+v236 := 5;
+v237 := 7;
+v238 := 7;
+v239 := 8;
+v240 := 8;
+v241 := 9;
+v242 := 6;
+v243 := 2;
+v244 := 3;
+v245 := 3;
+v246 := 9;
+v247 := 7;
+v248 := 2;
+v249 := 5;
+v250 := 1;
+v251 := 3;
+v252 := 7;
+v253 := 9;
+v254 := 4;
+v255 := 7;
+v256 := 3;
+v257 := 2;
+v258 := 9;
+v259 := 3;
+v260 := 3;
+v261 := 8;
+v262 := 1;
+v263 := 4;
+v264 := 4;
+v265 := 3;
+v266 := 4;
+v267 := 9;
+v268 := 4;
+v269 := 5;
+v270 := 3;
+v271 := 3;
+v272 := 1;
+v273 := 2;
+v274 := 9;
+v275 := 9;
+v276 := 3;
+v277 := 9;
+v278 := 9;
+v279 := 7;
+v280 := 5;
+v281 := 6;
+v282 := 1;
+v283 := 1;
+v284 := 7;
+v285 := 1;
+v286 := 8;
+v287 := 8;
+v288 := 2;
+v289 := 9;
+v290 := 8;
+v291 := 8;
+v292 := 8;
+v293 := 7;
+v294 := 7;
+v295 := 5;
+v296 := 9;
+v297 := 3;
+v298 := 4;
+v299 := 9;
+v300 := 9;
+
+v1 := v2
+-((v3
+-v4
++v5))
+-((v6
++v7
++v8))
+-(v9
++(v10
++v11)
++((v12
++v13
+-((v14
++v15))
++v16)
+-v17))
+-v18
++((v19
+-v20)
+-v21)
+-(v22
++v23)
++(v24
+-(v25
+-v26))
++v27
++(v28
+-v29
++((v30
+-v31
++v32)
++v33))
++v34
+-((v35
+-((v36
++((v37
+-v38))
++((v39
+-(v40
+-v41
+-(v42
++v43))
+-v44)
+-v45))
++((v46
+-((v47
+-((v48
+-((v49
++v50))
++v51
+-v52
++v53))
++(v54
+-v55))
+-v56))
++v57
+-((v58
++v59))
++((v60
++v61
++v62)
++v63
++(v64
++v65)
+-v66
+-v67)
+-v68))
++v69))
++((v70
+-v71))
++(v72
++v73)
+-v74
++v75
+-((v76
++((v77
++v78))
+-((v79
+-v80
++v81)
+-(v82
++((v83
+-((v84
++v85
+-v86
+-v87)
+-v88
+-v89))
+-v90
++(v91
+-((v92
+-v93)
++v94
++((v95
++v96
++(v97
++v98))
+-v99
++v100)
++v101)
++v102))
+-v103))
+-v104)
+-v105)
++v106
++v107
++v108
+-((v109
+-(v110
+-v111)
+-((v112
+-(v113
+-(v114
++v115
++v116))
+-((v117
++v118))
++((v119
++(v120
++v121
++v122))
+-(v123
++((v124
++v125))
++((v126
++v127)
+-v128))
++v129))
+-v130)
+-v131
+-v132
++v133)
++v134)
+-v135
++v136
++v137
++v138
++((v139
++v140))
++v141
+-v142
++v143
+-((v144
+-v145
++((v146
+-(v147
++(v148
++v149))
++(v150
++(v151
++v152
+-v153)
++v154))
++v155))
++v156)
+-((v157
++(v158
+-(v159
++v160)
++((v161
++((v162
+-(v163
+-v164))
+-(v165
++v166))
++v167)
++v168))
+-v169
++v170
+-(v171
+-(v172
+-(v173
+-(v174
++v175
+-v176))
++v177
+-v178))
++v179)
+-(v180
++v181))
++((v182
+-v183))
++((v184
++v185))
+-(v186
++((v187
+-v188))
+-v189)
++((v190
++(v191
+-v192
++v193)
++v194
++v195)
++v196)
++((v197
++v198
++(v199
++v200
+-v201)
+-((v202
+-(v203
++((v204
++v205)
+-v206))
++v207
+-(v208
++(v209
+-(v210
+-v211)
++v212))
+-v213
++(v214
++((v215
+-v216
+-v217))
++((v218
++v219
+-v220
+-(v221
++((v222
++v223))
++v224
+-(v225
++v226
++v227))
++((v228
++v229))
++(v230
+-v231))
++(v232
+-v233
+-v234
+-(v235
++(v236
++v237
+-((v238
++v239))
+-(v240
++(v241
++v242
++(v243
++v244)
+-v245
+-v246))
++(v247
+-(v248
+-v249))
++(v250
+-v251))
+-v252
+-(v253
++v254)
++(v255
++((v256
+-(v257
++((v258
++v259)
+-v260))
+-v261)
++v262))
++v263)
++v264)
+-v265))
+-v266
++(v267
+-v268)
+-v269
+-v270)
++((v271
+-v272))
+-v273
++(v274
++v275)
+-v276)
+-((v277
+-v278
+-(v279
+-v280))
++v281)
+-v282)
++v283)
++v284
+-v285
+-((v286
++(v287
+-v288
+-v289
++((v290
++((v291
++v292)
+-((v293
++(v294
++(v295
+-v296))
+-(v297
+-v298))
++((v299
++v300)
+))))))));
+WRITE v1
+END stacktest.
