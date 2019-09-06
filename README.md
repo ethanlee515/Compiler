@@ -7,7 +7,7 @@ We were asked to implement it as an interpreter/compiler combo.
 I apologize for lack of meaningful version history.
 This was written when I didn't know how to use git.
 
-***The parser currently segfaults due to a double-free after giving output. If only I knew about smart pointers and ownership rules when I wrote this...***
+***WARNING: The parser currently segfaults due to a double-free after giving output. If only I knew about smart pointers and ownership rules when I wrote this...***
 
 ## Usage
 
