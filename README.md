@@ -4,7 +4,7 @@ This is a class project I wrote as an undergraduate.
 The language's grammar was provided to us in EBNF.
 We were asked to implement it as an interpreter/compiler combo.
 
-***WARNING: The parser currently segfaults due to a double-free after giving output. If only I knew about smart pointers and ownership rules when I wrote this... One of these days I might come back and fix everything up here***
+***WARNING: The parser currently segfaults after giving output, due to a double-free. If only I knew about smart pointers and ownership rules when I wrote this... One of these days I might come back and fix everything up here***
 
 ## Usage
 
