@@ -4,8 +4,10 @@ This is a class project I wrote as an undergraduate.
 The language's grammar was provided to us in EBNF.
 We were asked to implement it as an interpreter/compiler combo.
 
-I apologize for lack of meaningful version history. This was written when I didn't know how to use git.
-Or maybe that's a good thing, since I made too many mistakes and rewrote this way too many times. Especially the parser.
+I apologize for lack of meaningful version history.
+This was written when I didn't know how to use git.
+Or maybe that's a good thing, since the version history would only show how bad
+I was at coding. I rewrote this way too many times. Especially the parser.
 
 ## Usage
 
