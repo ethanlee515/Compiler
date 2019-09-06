@@ -1,5 +1,5 @@
 CXX=g++
-CPPFLAGS=-std=c++11 -Wall -Wextra -Wpedantic -O2
+CPPFLAGS=-std=c++11 -Wall -Wextra -Wpedantic -O2 -g
 
 all: sc
 
