@@ -6,8 +6,8 @@ We were asked to implement it as an interpreter/compiler combo.
 
 I apologize for lack of meaningful version history.
 This was written when I didn't know how to use git.
-Or maybe that's a good thing, since the version history would only show how bad
-I was at coding. I rewrote this way too many times. Especially the parser.
+
+***The parser currently segfaults due to a double-free after giving output. If only I knew about smart pointers and ownership rules when I wrote this...***
 
 ## Usage
 
