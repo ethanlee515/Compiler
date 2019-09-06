@@ -21,6 +21,8 @@ I was at coding. I rewrote this way too many times. Especially the parser.
 	* -a flag: Prints the abstract syntax tree.
 	* -i flag: Runs the interpreter. Unfortunately this is NYI.
 
+Code examples can be found in the examples folder.
+
 ## Disclaimer
 
 If you happen to be taking the same class, please do not cheat off of this. There's a good chance that this code doesn't work very well anyways.
