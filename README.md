@@ -17,7 +17,7 @@ I was at coding. I rewrote this way too many times. Especially the parser.
 	* No flags: Compiles the source code into ARM assembly.
 	* -s flag: Runs the scanner, or more commonly called the lexer. That is, prints the list of tokens.
 	* -c flag: Prints the concrete syntax tree. As in, the parse tree.
-	* -t flag: Prints the symbol table. ** Symbol table be buggy if complicated records/arrays structures are involved. **
+	* -t flag: Prints the symbol table. ***Symbol table may be buggy if complicated records/arrays structures are involved.***
 	* -a flag: Prints the abstract syntax tree.
 	* -i flag: Runs the interpreter. Unfortunately this is NYI.
 
