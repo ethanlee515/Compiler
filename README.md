@@ -4,7 +4,7 @@ This is a class project I wrote as an undergraduate.
 The language's grammar was provided to us in EBNF.
 We were asked to implement it as an interpreter/compiler combo.
 
-***WARNING: The parser currently segfaults after giving output, due to a double-free. I need to come back and fix everything up one of these days.***
+***WARNING: The parser currently segfaults after giving output, due to a double-free. I need to come back and fix everything one of these days.***
 
 ## Usage
 
